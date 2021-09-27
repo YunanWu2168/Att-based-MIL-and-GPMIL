@@ -1,0 +1,25 @@
+path_train_df: ./data/RSNA/train/rsna_train_0.csv
+path_test_df: ./data/RSNA/test/rsna_test_0.csv
+output_path: ./output/
+
+vgpmil:
+  inducing_points: 200
+  iterations: 200
+  normalize: True
+  verbose: False
+  kernel_length_scale: 2.0
+  kernel_variance: 0.5
+
+# input column naming convention
+col_feature_prefix: 'feature'
+col_instance_label: 'instance_label'
+col_cnn_prediction: 'cnn_prediction'
+col_bag_label: 'bag_label'
+col_bag_name: 'bag_name'
+col_bag_cnn_prediction: 'bag_cnn_prediction'
+col_bag_cnn_probability: 'bag_cnn_probability'
+
+
+tsne:
+  visualize: False
+  random_seed: 0
